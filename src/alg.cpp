@@ -44,7 +44,7 @@ void traverse(PMTree::Node* node, std::vector<char>& current,
 
   if (node->val != '\0') current.pop_back();
 }
-}
+} // namespace
 
 std::vector<std::vector<char>> getAllPerms(const PMTree& tree) {
   std::vector<std::vector<char>> result;

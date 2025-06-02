@@ -5,7 +5,7 @@
 #include <vector>
 
 class PMTree {
-public:
+ public:
   struct Node {
     char val;
     std::vector<Node*> children;
@@ -18,7 +18,7 @@ public:
 
   Node* getRoot() const { return root_; }
 
-private:
+ private:
   Node* root_;
   void buildTree(Node* node, std::vector<char> remaining);
 };
